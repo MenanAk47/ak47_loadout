@@ -1,0 +1,485 @@
+Config = {}
+Config.PatreonEmail = 'Your Patron Email' --Take authorisation with your patreon email.
+Config.SharedObjectName = 'esx:getSharedObject'
+
+-- chat commands to remove weapon attachments
+Config.RemoveClip 		= 'r_clip' 		-- to remove weapon clip
+Config.RemoveScope 		= 'r_scope'		-- to remove scope 	
+Config.RemoveGrip 		= 'r_grip'		-- to remove grip
+Config.RemoveFlsh 		= 'r_flsh'		-- to remove flash light
+Config.RemoveSuppressor = 'r_supp'		-- to remove suppressor
+Config.WeaponAsItem 	= false			-- enable if using disc inventory
+
+Config.Component = {
+	['COMPONENT_PISTOL_CLIP_02'] = {
+		weapons = {
+			'WEAPON_PISTOL',
+		}
+	},
+	['COMPONENT_AT_PI_FLSH'] = {
+		weapons = {
+			'WEAPON_PISTOL',
+			'WEAPON_COMBATPISTOL',
+			'WEAPON_APPISTOL',
+			'WEAPON_PISTOL50',
+			'WEAPON_HEAVYPISTOL',
+			'WEAPON_MICROSMG',
+		}
+	},
+	['COMPONENT_AT_PI_SUPP_02'] = {
+		weapons = {
+			'WEAPON_PISTOL',
+		}
+	},
+	['COMPONENT_COMBATPISTOL_CLIP_02'] = {
+		weapons = {
+			'WEAPON_COMBATPISTOL',
+		}
+	},
+	['COMPONENT_AT_PI_SUPP'] = {
+		weapons = {
+			'WEAPON_COMBATPISTOL',
+			'WEAPON_APPISTOL',
+			'WEAPON_HEAVYPISTOL',
+			'WEAPON_VINTAGEPISTOL',
+			'WEAPON_SMG',
+			'WEAPON_SMG_MK2',
+			'WEAPON_MACHINEPISTOL',
+		}
+	},
+	['COMPONENT_APPISTOL_CLIP_02'] = {
+		weapons = {
+			'WEAPON_APPISTOL',
+		}
+	},
+	['COMPONENT_PISTOL50_CLIP_02'] = {
+		weapons = {
+			'WEAPON_PISTOL50',
+		}
+	},
+	['COMPONENT_AT_AR_SUPP_02'] = {
+		weapons = {
+			'WEAPON_PISTOL50',
+			'WEAPON_MICROSMG',
+			'WEAPON_ASSAULTSMG',
+			'WEAPON_BULLPUPSHOTGUN',
+			'WEAPON_HEAVYSHOTGUN',
+			'WEAPON_ASSAULTRIFLE',
+			'WEAPON_SPECIALCARBINE',
+			'WEAPON_SNIPERRIFLE',
+		}
+	},
+	['COMPONENT_SNSPISTOL_CLIP_02'] = {
+		weapons = {
+			'WEAPON_SNSPISTOL',
+		}
+	},
+	['COMPONENT_HEAVYPISTOL_CLIP_02'] = {
+		weapons = {
+			'WEAPON_HEAVYPISTOL',
+		}
+	},
+	['COMPONENT_VINTAGEPISTOL_CLIP_02'] = {
+		weapons = {
+			'WEAPON_VINTAGEPISTOL',
+		}
+	},
+	['COMPONENT_MICROSMG_CLIP_02'] = {
+		weapons = {
+			'WEAPON_MICROSMG',
+		}
+	},
+	['COMPONENT_AT_SCOPE_MACRO'] = {
+		weapons = {
+			'WEAPON_MICROSMG',
+			'WEAPON_ASSAULTSMG',
+			'WEAPON_ASSAULTRIFLE',
+		}
+	},
+	['COMPONENT_SMG_CLIP_02'] = {
+		weapons = {
+			'WEAPON_SMG',
+		}
+	},
+	['COMPONENT_SMG_CLIP_03'] = {
+		weapons = {
+			'WEAPON_SMG',
+		}
+	},
+	['COMPONENT_AT_AR_FLSH'] = {
+		weapons = {
+			'WEAPON_SMG',
+			'WEAPON_SMG_MK2',
+			'WEAPON_ASSAULTSMG',
+			'WEAPON_COMBATPDW',
+			'WEAPON_PUMPSHOTGUN',
+			'WEAPON_ASSAULTSHOTGUN',
+			'WEAPON_BULLPUPSHOTGUN',
+			'WEAPON_HEAVYSHOTGUN',
+			'WEAPON_ASSAULTRIFLE',
+			'WEAPON_CARBINERIFLE',
+			'WEAPON_ADVANCEDRIFLE',
+			'WEAPON_SPECIALCARBINE',
+			'WEAPON_BULLPUPRIFLE',
+			'WEAPON_MARKSMANRIFLE',
+		}
+	},
+	['COMPONENT_AT_SCOPE_MACRO_02'] = {
+		weapons = {
+			'WEAPON_SMG',
+		}
+	},
+	['COMPONENT_SMG_MK2_CLIP_02'] = {
+		weapons = {
+			'WEAPON_SMG_MK2',
+		}
+	},
+	['COMPONENT_SMG_MK2_CLIP_FMJ'] = {
+		weapons = {
+			'WEAPON_SMG_MK2',
+		}
+	},
+	['COMPONENT_AT_SCOPE_MACRO_02_SMG_MK2'] = {
+		weapons = {
+			'WEAPON_SMG_MK2',
+		}
+	},
+	['COMPONENT_ASSAULTSMG_CLIP_02'] = {
+		weapons = {
+			'WEAPON_ASSAULTSMG',
+		}
+	},
+	['COMPONENT_MINISMG_CLIP_02'] = {
+		weapons = {
+			'WEAPON_MINISMG',
+		}
+	},
+	['COMPONENT_MACHINEPISTOL_CLIP_02'] = {
+		weapons = {
+			'WEAPON_MACHINEPISTOL',
+		}
+	},
+	['COMPONENT_MACHINEPISTOL_CLIP_03'] = {
+		weapons = {
+			'WEAPON_MACHINEPISTOL',
+		}
+	},
+	['COMPONENT_COMBATPDW_CLIP_02'] = {
+		weapons = {
+			'WEAPON_COMBATPDW',
+		}
+	},
+	['COMPONENT_COMBATPDW_CLIP_03'] = {
+		weapons = {
+			'WEAPON_COMBATPDW',
+		}
+	},
+	['COMPONENT_AT_AR_AFGRIP'] = {
+		weapons = {
+			'WEAPON_COMBATPDW',
+			'WEAPON_ASSAULTSHOTGUN',
+			'WEAPON_BULLPUPSHOTGUN',
+			'WEAPON_HEAVYSHOTGUN',
+			'WEAPON_ASSAULTRIFLE',
+			'WEAPON_CARBINERIFLE',
+			'WEAPON_SPECIALCARBINE',
+			'WEAPON_BULLPUPRIFLE',
+			'WEAPON_COMBATMG',
+			'WEAPON_MARKSMANRIFLE',
+		}
+	},
+	['COMPONENT_AT_SCOPE_SMALL'] = {
+		weapons = {
+			'WEAPON_COMBATPDW',
+			'WEAPON_ADVANCEDRIFLE',
+			'WEAPON_BULLPUPRIFLE',
+		}
+	},
+	['COMPONENT_AT_SR_SUPP'] = {
+		weapons = {
+			'WEAPON_PUMPSHOTGUN',
+		}
+	},
+	['COMPONENT_ASSAULTSHOTGUN_CLIP_02'] = {
+		weapons = {
+			'WEAPON_ASSAULTSHOTGUN',
+		}
+	},
+	['COMPONENT_AT_AR_SUPP'] = {
+		weapons = {
+			'WEAPON_ASSAULTSHOTGUN',
+			'WEAPON_CARBINERIFLE',
+			'WEAPON_ADVANCEDRIFLE',
+			'WEAPON_BULLPUPRIFLE',
+			'WEAPON_MARKSMANRIFLE',
+		}
+	},
+	['COMPONENT_HEAVYSHOTGUN_CLIP_02'] = {
+		weapons = {
+			'WEAPON_HEAVYSHOTGUN',
+		}
+	},
+	['COMPONENT_HEAVYSHOTGUN_CLIP_03'] = {
+		weapons = {
+			'WEAPON_HEAVYSHOTGUN',
+		}
+	},
+	['COMPONENT_ASSAULTRIFLE_CLIP_02'] = {
+		weapons = {
+			'WEAPON_ASSAULTRIFLE',
+		}
+	},
+	['COMPONENT_ASSAULTRIFLE_CLIP_03'] = {
+		weapons = {
+			'WEAPON_ASSAULTRIFLE',
+		}
+	},
+	['COMPONENT_AT_SCOPE_MEDIUM'] = {
+		weapons = {
+			'WEAPON_CARBINERIFLE',
+			'WEAPON_SPECIALCARBINE',
+			'WEAPON_COMBATMG',
+		}
+	},
+	['COMPONENT_CARBINERIFLE_CLIP_02'] = {
+		weapons = {
+			'WEAPON_CARBINERIFLE',
+		}
+	},
+	['COMPONENT_CARBINERIFLE_CLIP_03'] = {
+		weapons = {
+			'WEAPON_CARBINERIFLE',
+		}
+	},
+	['COMPONENT_ADVANCEDRIFLE_CLIP_02'] = {
+		weapons = {
+			'WEAPON_ADVANCEDRIFLE',
+		}
+	},
+	['COMPONENT_SPECIALCARBINE_CLIP_02'] = {
+		weapons = {
+			'WEAPON_SPECIALCARBINE',
+		}
+	},
+	['COMPONENT_SPECIALCARBINE_CLIP_03'] = {
+		weapons = {
+			'WEAPON_SPECIALCARBINE',
+		}
+	},
+	['COMPONENT_BULLPUPRIFLE_CLIP_02'] = {
+		weapons = {
+			'WEAPON_BULLPUPRIFLE',
+		}
+	},
+	['COMPONENT_COMPACTRIFLE_CLIP_02'] = {
+		weapons = {
+			'WEAPON_COMPACTRIFLE',
+		}
+	},
+	['COMPONENT_COMPACTRIFLE_CLIP_03'] = {
+		weapons = {
+			'WEAPON_COMPACTRIFLE',
+		}
+	},
+	['COMPONENT_MG_CLIP_02'] = {
+		weapons = {
+			'WEAPON_MG',
+		}
+	},
+	['COMPONENT_AT_SCOPE_SMALL_02'] = {
+		weapons = {
+			'WEAPON_MG',
+		}
+	},
+	['COMPONENT_COMBATMG_CLIP_02'] = {
+		weapons = {
+			'WEAPON_COMBATMG',
+		}
+	},
+	['COMPONENT_GUSENBERG_CLIP_02'] = {
+		weapons = {
+			'WEAPON_GUSENBERG',
+		}
+	},
+	['COMPONENT_AT_SCOPE_MAX'] = {
+		weapons = {
+			'WEAPON_SNIPERRIFLE',
+			'WEAPON_HEAVYSNIPER',
+		}
+	},
+	['COMPONENT_MARKSMANRIFLE_CLIP_02'] = {
+		weapons = {
+			'WEAPON_MARKSMANRIFLE',
+		}
+	},
+}
+
+Config.ComponentRemove = {
+	--Pistol
+	['WEAPON_PISTOL'] = {--1
+		[1] = 'COMPONENT_PISTOL_CLIP_02',
+		[2] = 'COMPONENT_AT_PI_FLSH',
+		[3]	= 'COMPONENT_AT_PI_SUPP_02',
+	},
+	['WEAPON_COMBATPISTOL'] = {--2
+		[1] = 'COMPONENT_AT_PI_FLSH',
+		[2] = 'COMPONENT_COMBATPISTOL_CLIP_02',
+		[3]	= 'COMPONENT_AT_PI_SUPP',
+	},
+	['WEAPON_APPISTOL'] = {--3
+		[1] = 'COMPONENT_AT_PI_FLSH',
+		[2] = 'COMPONENT_AT_PI_SUPP',
+		[3]	= 'COMPONENT_APPISTOL_CLIP_02',
+	},
+	['WEAPON_PISTOL50'] = {--4
+		[1] = 'COMPONENT_AT_PI_FLSH',
+		[2] = 'COMPONENT_PISTOL50_CLIP_02',
+		[3]	= 'COMPONENT_AT_AR_SUPP_02',
+	},
+	['WEAPON_HEAVYPISTOL'] = {--5
+		[1] = 'COMPONENT_AT_PI_FLSH',
+		[2] = 'COMPONENT_AT_PI_SUPP',
+		[3]	= 'COMPONENT_HEAVYPISTOL_CLIP_02',
+	},
+	['WEAPON_VINTAGEPISTOL'] = {--7
+		[1] = 'COMPONENT_VINTAGEPISTOL_CLIP_02',
+		[2] = 'COMPONENT_AT_PI_SUPP',
+	},
+	['WEAPON_MACHINEPISTOL'] = {--10
+		[1] = 'COMPONENT_MACHINEPISTOL_CLIP_02',
+		[2] = 'COMPONENT_MACHINEPISTOL_CLIP_03',
+		[3] = 'COMPONENT_AT_PI_SUPP',
+	},
+	['WEAPON_SNSPISTOL'] = {--17
+		[1] = 'COMPONENT_SNSPISTOL_CLIP_02',
+	},
+	--SMG
+	['WEAPON_MICROSMG'] = {--6
+		[1] = 'COMPONENT_AT_PI_FLSH',
+		[2] = 'COMPONENT_AT_AR_SUPP_02',
+		[3]	= 'COMPONENT_MICROSMG_CLIP_02',
+		[4]	= 'COMPONENT_AT_SCOPE_MACRO',
+	},
+	['WEAPON_MINISMG'] = {--25
+		[1] = 'COMPONENT_MINISMG_CLIP_02',
+	},
+	['WEAPON_SMG'] = {--8
+		[1] = 'COMPONENT_AT_PI_SUPP',
+		[2] = 'COMPONENT_SMG_CLIP_02',
+		[3]	= 'COMPONENT_SMG_CLIP_03',
+		[4]	= 'COMPONENT_AT_AR_FLSH',
+		[5]	= 'COMPONENT_AT_SCOPE_MACRO_02',
+	},
+	['WEAPON_SMG_MK2'] = {--9
+		[1] = 'COMPONENT_AT_AR_FLSH',
+		[2] = 'COMPONENT_SMG_MK2_CLIP_02',
+		[3]	= 'COMPONENT_SMG_MK2_CLIP_FMJ',
+		[4]	= 'COMPONENT_AT_SCOPE_MACRO_02_SMG_MK2',
+	},
+	['WEAPON_ASSAULTSMG'] = {--11
+		[1] = 'COMPONENT_AT_AR_SUPP_02',
+		[2] = 'COMPONENT_AT_SCOPE_MACRO',
+		[3]	= 'COMPONENT_AT_AR_FLSH',
+		[4]	= 'COMPONENT_ASSAULTSMG_CLIP_02',
+	},
+	--MG
+	['WEAPON_MG'] = {--28
+		[1] = 'COMPONENT_AT_AR_SUPP_02',
+		[2] = 'COMPONENT_AT_SCOPE_SMALL_02',
+	},
+	['WEAPON_COMBATMG'] = {--26
+		[1] = 'COMPONENT_AT_AR_AFGRIP',
+		[2] = 'COMPONENT_AT_SCOPE_MEDIUM',
+		[3] = 'COMPONENT_COMBATMG_CLIP_02',
+	},
+	['WEAPON_GUSENBERG'] = {--29
+		[1] = 'COMPONENT_GUSENBERG_CLIP_02',
+	},
+	--Shotgun
+	['WEAPON_BULLPUPSHOTGUN'] = {--12
+		[1] = 'COMPONENT_MG_CLIP_02',
+		[2] = 'COMPONENT_AT_AR_FLSH',
+		[3]	= 'COMPONENT_AT_AR_AFGRIP',
+	},
+	['WEAPON_HEAVYSHOTGUN'] = {--13
+		[1] = 'COMPONENT_AT_AR_SUPP_02',
+		[2] = 'COMPONENT_AT_AR_FLSH',
+		[3]	= 'COMPONENT_AT_AR_AFGRIP',
+		[4]	= 'COMPONENT_HEAVYSHOTGUN_CLIP_02',
+		[5]	= 'COMPONENT_HEAVYSHOTGUN_CLIP_03',
+	},
+	['WEAPON_PUMPSHOTGUN'] = {--19
+		[1] = 'COMPONENT_AT_AR_FLSH',
+		[2] = 'COMPONENT_AT_SR_SUPP',
+	},
+	['WEAPON_ASSAULTSHOTGUN'] = {--20
+		[1] = 'COMPONENT_AT_AR_FLSH',
+		[2] = 'COMPONENT_AT_AR_AFGRIP',
+		[3]	= 'COMPONENT_ASSAULTSHOTGUN_CLIP_02',
+		[4]	= 'COMPONENT_AT_AR_SUPP',
+	},
+	--Rifle
+	['WEAPON_ASSAULTRIFLE'] = {--14
+		[1] = 'COMPONENT_AT_AR_SUPP_02',
+		[2] = 'COMPONENT_AT_SCOPE_MACRO',
+		[3]	= 'COMPONENT_AT_AR_FLSH',
+		[4]	= 'COMPONENT_AT_AR_AFGRIP',
+		[5]	= 'COMPONENT_ASSAULTRIFLE_CLIP_02',
+		[6]	= 'COMPONENT_ASSAULTRIFLE_CLIP_03',
+	},
+	['WEAPON_CARBINERIFLE'] = {--21
+		[1] = 'COMPONENT_AT_AR_FLSH',
+		[2] = 'COMPONENT_AT_AR_AFGRIP',
+		[3]	= 'COMPONENT_AT_AR_SUPP',
+		[4]	= 'COMPONENT_AT_SCOPE_MEDIUM',
+		[5]	= 'COMPONENT_CARBINERIFLE_CLIP_02',
+		[6]	= 'COMPONENT_CARBINERIFLE_CLIP_03',
+	},
+	['WEAPON_SPECIALCARBINE'] = {--15
+		[1] = 'COMPONENT_AT_AR_SUPP_02',
+		[2] = 'COMPONENT_AT_AR_FLSH',
+		[3]	= 'COMPONENT_AT_AR_AFGRIP',
+		[4]	= 'COMPONENT_AT_SCOPE_MEDIUM',
+		[5]	= 'COMPONENT_SPECIALCARBINE_CLIP_02',
+		[6]	= 'COMPONENT_SPECIALCARBINE_CLIP_03',
+	},
+	['WEAPON_COMBATPDW'] = {--18
+		[1] = 'COMPONENT_AT_AR_FLSH',
+		[2] = 'COMPONENT_COMBATPDW_CLIP_02',
+		[3]	= 'COMPONENT_COMBATPDW_CLIP_03',
+		[4]	= 'COMPONENT_AT_AR_AFGRIP',
+		[5]	= 'COMPONENT_AT_SCOPE_SMALL',
+	},
+	['WEAPON_MARKSMANRIFLE'] = {--24
+		[1] = 'COMPONENT_AT_AR_FLSH',
+		[2] = 'COMPONENT_AT_AR_AFGRIP',
+		[3] = 'COMPONENT_AT_AR_SUPP',
+		[4] = 'COMPONENT_MARKSMANRIFLE_CLIP_02',
+	},
+	['WEAPON_ADVANCEDRIFLE'] = {--22
+		[1] = 'COMPONENT_AT_AR_FLSH',
+		[2] = 'COMPONENT_AT_AR_AFGRIP',
+		[3] = 'COMPONENT_AT_SCOPE_SMALL',
+		[4] = 'COMPONENT_AT_AR_SUPP',
+		[5] = 'COMPONENT_BULLPUPRIFLE_CLIP_02',
+	},
+	['WEAPON_BULLPUPRIFLE'] = {--23
+		[1] = 'COMPONENT_AT_AR_FLSH',
+		[2] = 'COMPONENT_AT_SCOPE_SMALL',
+		[3] = 'COMPONENT_AT_AR_SUPP',
+		[4] = 'COMPONENT_ADVANCEDRIFLE_CLIP_02',
+	},
+	['WEAPON_COMPACTRIFLE'] = {--27
+		[1] = 'COMPONENT_COMPACTRIFLE_CLIP_02',
+		[2] = 'COMPONENT_COMPACTRIFLE_CLIP_03',
+	},
+	--Sniper
+	['WEAPON_SNIPERRIFLE'] = {--16
+		[1] = 'COMPONENT_AT_AR_SUPP_02',
+		[2] = 'COMPONENT_AT_SCOPE_MAX',
+	},
+	['WEAPON_HEAVYSNIPER'] = {--30
+		[1] = 'COMPONENT_AT_SCOPE_MAX',
+	},
+}
+
