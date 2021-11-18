@@ -1,7 +1,9 @@
 fx_version 'adamant'
 game 'gta5'
-description 'MenanAk47 - Optimized Weapon Attachment'
-version '2.0'
+name "ak47_loadout"
+author "MenanAk47 (MenanAk47#3129)"
+description "MenanAk47 - Optimized Weapon Attachment"
+version "1.0"
 
 server_scripts {
 	'@mysql-async/lib/MySQL.lua',
